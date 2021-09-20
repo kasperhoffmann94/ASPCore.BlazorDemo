@@ -8,6 +8,8 @@ namespace CalculatorTests
     public class CalculatorTests
     {
         private IsPrime isPrime = new IsPrime();
+
+        private IsSqrt isSqrt = new IsSqrt();
         // opgave 1
         [Fact]
         public void TestAdd()
@@ -85,13 +87,23 @@ namespace CalculatorTests
         [Fact]
         public void TestSquareRoot()
         {
-           
+            using var ctx = new TestContext();
+            var calcSqrt = ctx.RenderComponent<Calculator>();
+            var sqrtResult = "";
+
+            calcSqrt.FindAll("input")[0].Change("4");
+            calcSqrt.FindAll("button")[5].Click();
+            //implement this calcSqrt.FindAll("input")[4].Change(isSqrt.IsNumberSqrt(int.Parse()));
+
+            calcSqrt.FindAll("button")[5].Click();
         }
 
         [Fact]
         public void TestModulus()
         {
-           
+            using var ctx = new TestContext();
+            var calcMod = ctx.RenderComponent<Calculator>();
+            var modulusResult = "";
         }
     }
 }
