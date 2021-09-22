@@ -8,8 +8,8 @@ namespace CalculatorTests
     public class CalculatorTests
     {
         private IsPrime isPrime = new IsPrime();
-
         private IsSqrt isSqrt = new IsSqrt();
+        private CheckModulus checkMod = new CheckModulus();
         // opgave 1
         [Fact]
         public void TestAdd()
@@ -90,12 +90,16 @@ namespace CalculatorTests
             using var ctx = new TestContext();
             var calcSqrt = ctx.RenderComponent<Calculator>();
             var sqrtResult = "";
+            var numberToSquare = "";
 
             calcSqrt.FindAll("input")[0].Change("4");
             calcSqrt.FindAll("button")[5].Click();
-            //implement this calcSqrt.FindAll("input")[4].Change(isSqrt.IsNumberSqrt(int.Parse()));
+            calcSqrt.FindAll("input")[4].Change(isSqrt.IsNumberSqrt(int.Parse(calcSqrt.FindAll("input")[0].GetAttribute("value"))).ToString());
 
-            calcSqrt.FindAll("button")[5].Click();
+            sqrtResult = calcSqrt.FindAll("input")[4].GetAttribute("value");
+
+            Assert.True(bool.Parse(sqrtResult));
+
         }
 
         [Fact]
@@ -104,6 +108,13 @@ namespace CalculatorTests
             using var ctx = new TestContext();
             var calcMod = ctx.RenderComponent<Calculator>();
             var modulusResult = "";
+
+            calcMod.FindAll("input")[0].Change("2");
+            calcMod.FindAll("input")[1].Change("2");
+            calcMod.FindAll("button")[6].Click();
+            calcMod.FindAll("input")[2].Change(checkMod.CheckModulusForNumbers(int.Parse(calcMod.FindAll("input")[0].GetAttribute("value")), int.Parse(calcMod.FindAll("input")[1].GetAttribute("value"))).ToString());
+
+            calcMod.FindAll("input")[2].GetAttribute("value").MarkupMatches("2");
         }
     }
 }

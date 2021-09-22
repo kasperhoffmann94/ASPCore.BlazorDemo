@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Vw/Mt3UeUzP+R7APDLe6yqVugpCJ/v5NxJab36JtQV3rNNctm9Djpjd7K8tgEgaReeJXTaat0bWK57XZ5thEA==",
+  "dgSpecHash": "RzBYD4ZRmhlcy5dNlaGbnO93OSptd6LLseSxzxuWLx/NQEqAXUNF7U6PqGb2jyIapUMmUTH7ziCSVE2DRY+Qvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
+  "projectFilePath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kaspe\\.nuget\\packages\\anglesharp\\0.16.0\\anglesharp.0.16.0.nupkg.sha512",
     "C:\\Users\\kaspe\\.nuget\\packages\\anglesharp.css\\0.16.0\\anglesharp.css.0.16.0.nupkg.sha512",

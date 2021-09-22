@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj": {}
+    "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj": {
+    "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
+        "projectUniqueName": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
         "projectName": "BlazorDemo",
-        "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
+        "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj",
         "packagesPath": "C:\\Users\\kaspe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\obj\\",
+        "outputPath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,6 +33,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -44,6 +45,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Blazor": {
               "target": "Package",
@@ -83,18 +85,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200-preview-014883\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj": {
+    "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
+        "projectUniqueName": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
         "projectName": "CalculatorTests",
-        "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
+        "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\CalculatorTests.csproj",
         "packagesPath": "C:\\Users\\kaspe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\CalculatorTests\\obj\\",
+        "outputPath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\CalculatorTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -116,9 +118,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj": {
-                "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\BlazorTesting\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj"
+              "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj": {
+                "projectPath": "C:\\Users\\kaspe\\Source\\Repos\\kasperhoffmann94\\ASPCore.BlazorDemo\\BlazorDemo\\BlazorDemo\\BlazorDemo.csproj"
               }
             }
           }
@@ -131,6 +134,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -172,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200-preview-014883\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
