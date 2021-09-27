@@ -84,13 +84,13 @@ using CalculatorTests;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 57 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
+#line 64 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
        
     string num1;
     string num2;
     string finalresult;
     string primeResult;
-    IsPrime isPrime;
+    IsPrime isPrime = new IsPrime();
     void AddNumbers()
     {
         finalresult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
