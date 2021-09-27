@@ -1,4 +1,6 @@
 ﻿@page "/calculator"
+@using System.Data
+@using CalculatorTests
 
 <h1>Basic Calculator Demo Using Blazor</h1>
 <hr />
@@ -28,6 +30,9 @@
         <div class="col-md-4">
             <input readonly @bind="@finalresult" />
         </div>
+        <div class="col-md-4">
+            <input readonly @bind="@primeResult" />
+        </div>
     </div>
     <br />
     <div class="row">
@@ -43,6 +48,9 @@
         <div class="col-md-2">
             <button @onclick="DivideNumbers" class="btn btn-info">Divide (/)</button>
         </div>
+        <div class="col-md-2">
+            <button @onclick="PrimeNumber" class="btn btn-info">Is prime?</button>
+        </div>
     </div>
 </div>
 
@@ -50,6 +58,8 @@
     string num1;
     string num2;
     string finalresult;
+    string primeResult;
+    IsPrime isPrime;
     void AddNumbers()
     {
         finalresult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
@@ -72,5 +82,9 @@
         {
             finalresult = "Cannot Divide by Zero";
         }
+    }
+    void PrimeNumber()
+    {
+        primeResult = isPrime.IsNumberPrime(int.Parse(num1)).ToString();
     }
 }

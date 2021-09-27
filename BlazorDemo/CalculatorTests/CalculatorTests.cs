@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using Bunit;
 using BlazorDemo.Pages;
+using BlazorDemo;
 
 namespace CalculatorTests
 {
@@ -72,13 +73,9 @@ namespace CalculatorTests
             var calcPrime = ctx.RenderComponent<Calculator>();
             var primeResult = "";
 
-            calcPrime.FindAll("input")[0].Change("1");
-            calcPrime.FindAll("input")[1].Change("2");
-            calcPrime.FindAll("button")[0].Click();
+            calcPrime.FindAll("input")[0].Change("3");
             calcPrime.FindAll("button")[4].Click();
-            calcPrime.FindAll("input")[3].Change(isPrime.IsNumberPrime(int.Parse(calcPrime.FindAll("input")[2].GetAttribute("value"))).ToString());
-
-            calcPrime.FindAll("input")[2].GetAttribute("value").MarkupMatches("1");
+            calcPrime.FindAll("input")[3].Change(isPrime.IsNumberPrime(int.Parse(calcPrime.FindAll("input")[0].GetAttribute("value"))).ToString());
             primeResult = calcPrime.FindAll("input")[3].GetAttribute("value");
 
             Assert.True(bool.Parse(primeResult));

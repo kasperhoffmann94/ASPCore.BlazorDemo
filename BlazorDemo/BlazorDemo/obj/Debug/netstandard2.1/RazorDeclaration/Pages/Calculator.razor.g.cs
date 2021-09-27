@@ -61,6 +61,20 @@ using BlazorDemo.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
+using System.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
+using CalculatorTests;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/calculator")]
     public partial class Calculator : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -70,11 +84,13 @@ using BlazorDemo.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
+#line 57 "C:\Users\kaspe\Source\Repos\kasperhoffmann94\ASPCore.BlazorDemo\BlazorDemo\BlazorDemo\Pages\Calculator.razor"
        
     string num1;
     string num2;
     string finalresult;
+    string primeResult;
+    IsPrime isPrime;
     void AddNumbers()
     {
         finalresult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
@@ -97,6 +113,10 @@ using BlazorDemo.Shared;
         {
             finalresult = "Cannot Divide by Zero";
         }
+    }
+    void PrimeNumber()
+    {
+        primeResult = isPrime.IsNumberPrime(int.Parse(num1)).ToString();
     }
 
 #line default
